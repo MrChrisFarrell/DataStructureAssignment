@@ -1,5 +1,6 @@
 from year import *
 from sweepstakes import *
+from immediate_family import *
 """Store the months of the year, grab month which Pi Day exists"""
 
 current_year = Year(2021)
@@ -19,3 +20,6 @@ sweepstakes.add_contestant("Mary", "Poppins", 6521)
 sweepstakes.add_contestant("Rocky", "Balboa", 7623)
 sweepstakes.add_contestant("Demolition", "Man", 8964)
 sweepstakes.random_winner()
+
+immediate_family = [ImmediateFamily("Amanda", "Farrell", "Spouse"), ImmediateFamily("Mary", "Myers", "Mother"), ImmediateFamily("Finlee", "Farrell", "Daughter")]
+print(immediate_family)
