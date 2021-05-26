@@ -2,6 +2,7 @@ from year import *
 from sweepstakes import *
 from immediate_family import *
 from linkedlist import *
+from node2 import *
 """Store the months of the year, grab month which Pi Day exists"""
 
 current_year = Year(2021)
@@ -38,3 +39,18 @@ if linked_list.contains_node(60):
     print("yes")
 else:
     print("No")
+
+
+node = Node(50)
+insert_node(node, 47)
+insert_node(node, 65)
+insert_node(node, 32)
+insert_node(node, 52)
+
+if search_for_node(node, 65):
+    print('yes')
+else:
+    print('no')
+
+in_order(node)
+pre_order(node)
